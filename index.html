@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chagee ฟรีสำหรับเบ๊บบี้</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;700;800&family=Sriracha&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <main class="hero">
+      <section class="intro-card">
+        <p class="eyebrow">ด่วนที่สุดในจักรวาลชา</p>
+        <h1>เบ๊บบี้ได้รับสิทธิ์ลับ<br>รับชา CHAGEE ฟรี 1 แก้ว</h1>
+        <p class="lead">
+          ระบบคัดเลือกด้วยความน่ารักระดับวีไอพีแล้วพบว่า
+          <strong>เบ๊บบี้เหมาะสมกับชาฟรีที่สุดในวันนี้</strong>
+          กรุณากดรับสิทธิ์ด้วยหัวใจที่มั่นคง เพราะชาแก้วนี้หวงตัวนิดนึง
+        </p>
+
+        <div class="perk-row" aria-label="สิทธิพิเศษของเบ๊บบี้">
+          <span>แจกเฉพาะเบ๊บบี้</span>
+        </div>
+
+        <div class="status-panel">
+          <div>
+            <p class="status-label">สถานะการคัดเลือก</p>
+            <p class="status-value" id="statusText">กำลังตรวจสอบความคู่ควรของเบ๊บบี้...</p>
+          </div>
+          <div class="meter-meta" aria-live="polite">
+            <span id="meterCaption">กำลังโหลดสิทธิ์ชาฟรี 22%</span>
+          </div>
+          <div class="meter" aria-hidden="true">
+            <div class="meter-fill" id="meterFill"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="visual-card">
+        <div class="sticker">สำหรับเบ๊บบี้เท่านั้น</div>
+        <img src="chagee.jpeg" alt="แก้วชา Chagee" class="drink-image">
+        <div class="visual-copy">
+          <p class="visual-title">Premium Tea Surprise</p>
+          <p class="visual-note">แก้วนี้ทำท่าเหมือนจะยอมเป็นของเบ๊บบี้ แต่จริง ๆ ยังเล่นตัวอยู่</p>
+        </div>
+      </section>
+    </main>
+
+    <section class="play-card" aria-labelledby="playTitle">
+      <div class="play-copy">
+        <p class="eyebrow">พิธีรับชาสุดศักดิ์สิทธิ์</p>
+        <h2 id="playTitle">คลิกให้ทัน ถ้าเบ๊บบี้แน่จริง</h2>
+        <p id="messageText" class="message" aria-live="polite">
+          เบ๊บบี้พร้อมไหม? ปุ่มด้านล่างกำลังทำสมาธิก่อนยอมให้กด
+        </p>
+      </div>
+
+      <div class="button-zone" id="buttonZone">
+        <button class="trick-button" id="trickButton" type="button">
+          เบ๊บบี้ คลิกเพื่อรับชา CHAGEE ฟรี
+        </button>
+        <div class="attempt-badge" id="attemptBadge">เบ๊บบี้พยายามแล้ว 0 ครั้ง</div>
+      </div>
+
+      <div class="cat-popup" id="catPopup" aria-hidden="true">
+        <button class="cat-popup__scrim" id="catPopupScrim" type="button" aria-label="ปิดป๊อปอัปแมว"></button>
+        <div class="cat-popup__panel" role="dialog" aria-modal="true" aria-labelledby="catPopupTitle">
+          <button class="cat-popup__close" id="catPopupClose" type="button" aria-label="ปิดหน้าต่างแมว">ปิด</button>
+          <img src="staring_cat.png" alt="แมวฝ่ายตรวจรับชากำลังจ้องอยู่" class="cat-popup__image">
+          <p class="cat-popup__eyebrow">ระบบเตือนภัยชา</p>
+          <h3 class="cat-popup__title" id="catPopupTitle">แมวมองแรงใส่เบ๊บบี้</h3>
+          <p class="cat-popup__text" id="catPopupText">แมวกำลังเฝ้าดูอยู่ว่าเบ๊บบี้จะโดนแกล้งอีกกี่รอบ</p>
+        </div>
+      </div>
+
+      <p class="footnote">หมายเหตุเล็ก ๆ : เว็บไซต์นี้สร้างมาเพื่อแกล้งเบ๊บบี้แบบเอ็นดูเท่านั้น ชาฟรีอาจมีอยู่จริงแค่ในใจคนทำ</p>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
